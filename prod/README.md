@@ -2,7 +2,11 @@
 This folders purpose is to share all performance configs that are currently possible.
 
 You can find them [here](https://developer.shopware.com/docs/guides/hosting/performance/performance-tweaks
-) as well, but spread out
+) as well, but spread out.
+
+## Redis
+
+You can simply generate your redis connections by copying the redis.cnf.dist to redis.cnf. Vorrausgesetzt you have the same Redis Server for all connections
 
 
 

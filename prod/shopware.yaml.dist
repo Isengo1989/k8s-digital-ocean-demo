@@ -1,0 +1,24 @@
+shopware:
+  admin_worker:
+    enable_admin_worker: false
+  cart:
+    redis_url: '|REDIS_DSN||REDIS_USER|:|REDIS_PASSWORD|@|REDIS_URL|:|REDIS_PORT|/|REDIS_CART_DB|?persistent=1'
+  cache:
+    invalidation:
+      http_cache: []
+      delay: 0
+      count: 150
+  mail:
+    update_mail_variables_on_send: false
+  increment:
+    user_activity:
+      type: 'redis'
+      config:
+        url: '|REDIS_DSN||REDIS_USER|:|REDIS_PASSWORD|@|REDIS_URL|:|REDIS_PORT|/|REDIS_INCREMENT_USER_DB|'
+    message_queue:
+      type: 'redis'
+      config:
+        url: '|REDIS_DSN||REDIS_USER|:|REDIS_PASSWORD|@|REDIS_URL|:|REDIS_PORT|/|REDIS_INCREMENT_QUEUE_DB|'
+  number_ranges:
+    increment_storage: "Redis"
+    redis_url: '|REDIS_DSN||REDIS_USER|:|REDIS_PASSWORD|@|REDIS_URL|:|REDIS_PORT|/|REDIS_NUMERRANGE_DB|'

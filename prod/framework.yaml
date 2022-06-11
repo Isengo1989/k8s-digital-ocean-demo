@@ -1,4 +1,0 @@
-framework:
-  lock: 'redis://host:port'
-  mailer:
-    message_bus: 'messenger.default_bus'

@@ -1,0 +1,6 @@
+framework:
+  lock: '|REDIS_DSN||REDIS_USER|:|REDIS_PASSWORD|@|REDIS_URL|:|REDIS_PORT|/|REDIS_LOCK_DB|'
+  session:
+      handler_id: '|REDIS_DSN||REDIS_USER|:|REDIS_PASSWORD|@|REDIS_URL|:|REDIS_PORT|/|REDIS_SESSION_DB|'
+  mailer:
+    message_bus: 'messenger.default_bus'
