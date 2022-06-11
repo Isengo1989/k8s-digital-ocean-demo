@@ -1,7 +1,9 @@
 # Shopware 6 + K8s on Digital Ocean
 This repo is to showcase a setup for shopware 6 with digital ocean managed k8s
 
-## Doctl Droplet Setup for POC
+## Digital Ocean
+
+### Doctl Droplet Setup for POC
 
 Choose your region, size and image. The purpose of this droplet is simply to test the first part of the tutorial and get a running shopware 6 envirmoent without k8s and container registry to validate the running system.
 
@@ -16,7 +18,7 @@ doctl compute droplet create shopware6-web --image ubuntu-20-04-x64  \
  --ssh-keys=ADD_YOUR_SSH_FINGERPRINTS
 ```
 
-## Doctl Mysql Database Setup
+### Doctl Mysql Database Setup
 
 Choose your region, size and engine.
 
@@ -36,7 +38,7 @@ doctl databases create shopware6-mysql --engine=mysql \
 https://cloud.digitalocean.com/databases/shopware6-mysql/settings?section=trustedSources
 
 
-## Doctl Redis Database Setup
+### Doctl Redis Database Setup
 
 Choose your region, size and engine.
 

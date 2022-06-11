@@ -1,0 +1,24 @@
+shopware:
+  admin_worker:
+    enable_admin_worker: false
+  cart:
+    redis_url: 'redis://localhost:6379/0?persistent=1'
+  cache:
+    invalidation:
+      http_cache: []
+      delay: 0
+      count: 150
+  mail:
+    update_mail_variables_on_send: false
+  increment:
+    user_activity:
+      type: 'redis'
+      config:
+        url: 'redis://host:port/dbindex'
+    message_queue:
+      type: 'redis'
+      config:
+        url: 'redis://host:port/dbindex'
+  number_ranges:
+    increment_storage: "Redis"
+    redis_url: 'redis://host:port/dbindex'
